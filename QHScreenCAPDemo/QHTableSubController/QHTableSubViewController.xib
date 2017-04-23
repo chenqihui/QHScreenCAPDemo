@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="QHTableSubViewController">
+            <connections>
+                <outlet property="showL" destination="ESM-Di-Sfc" id="55Q-Mt-YEx"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ESM-Di-Sfc">
+                    <rect key="frame" x="187.5" y="333.5" width="0.0" height="0.0"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdo-iV-Mbs">
+                    <rect key="frame" x="156.5" y="363.5" width="62" height="30"/>
+                    <state key="normal" title="开始录屏"/>
+                    <connections>
+                        <action selector="screenCAPAction:" destination="-1" eventType="touchUpInside" id="Klm-1i-cYf"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="Sdo-iV-Mbs" firstAttribute="top" secondItem="ESM-Di-Sfc" secondAttribute="bottom" constant="30" id="3tz-hK-7pj"/>
+                <constraint firstItem="ESM-Di-Sfc" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="4qn-vy-eto"/>
+                <constraint firstItem="ESM-Di-Sfc" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="7He-FX-VDe"/>
+                <constraint firstItem="Sdo-iV-Mbs" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="CgU-KE-2tb"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
