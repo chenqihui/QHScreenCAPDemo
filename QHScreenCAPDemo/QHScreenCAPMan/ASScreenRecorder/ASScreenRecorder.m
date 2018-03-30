@@ -81,6 +81,12 @@
         [self setUpWriter];
         _isRecording = (_videoWriter.status == AVAssetWriterStatusWriting);
         _displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(writeVideoFrame)];
+        if ([UIDevice currentDevice].systemVersion.floatValue >= 10.0) {
+            _displayLink.preferredFramesPerSecond = 20;
+        }
+        else {
+            _displayLink.frameInterval = 3;
+        }
         [_displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
     }
     return _isRecording;
