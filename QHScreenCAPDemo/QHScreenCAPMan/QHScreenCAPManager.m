@@ -50,7 +50,7 @@
 #pragma mark - util
 
 - (NSURL*)videoTempFileURL {
-    NSString *outputPath = [NSHomeDirectory() stringByAppendingPathComponent:@"tmp/screenCAP.mp4"];
+    NSString *outputPath = [NSHomeDirectory() stringByAppendingPathComponent:@"tmp/screenCAP.mov"];
     [self removeTempFilePath:outputPath];
     return [NSURL fileURLWithPath:outputPath];
 }
